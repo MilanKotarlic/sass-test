@@ -1,0 +1,56 @@
+/* Fonts */
+
+$app-font-stack: 'Inter', -apple-system, BlinkMacSystemFont,
+  'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+$app-font-secondary: 'Poppins', -apple-system, BlinkMacSystemFont,
+'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+$app-font-size-body: 16px;
+$app-font-size-stack: 1rem;
+$app-font-size-xxs: 1rem * 0.6875; // 11
+$app-font-size-xs: 1rem * 0.8125; // 13
+$app-font-size-sm: 1rem * 0.875; // 14
+$app-font-size-md: 1rem * 1.125; // 18
+$app-font-size-lg: 1rem * 1.5; // 24
+$app-font-size-xl: 1rem * 1.75; // 28
+$app-font-size-xxl: 1rem * 2.5; // 40
+
+$app-line-height-stack: 1rem * 1.5; // 24
+$app-line-height-sm: 1rem * 1.125; // 18
+$app-line-height-lg: 1rem * 2; // 32
+$app-line-height-xl: 1rem * 2.25; // 36
+$app-line-height-xxl: 1rem * 3; // 48
+
+/* Colors */
+$app-color-primary: #FE5E41;
+$app-color-secondary: #00A878;
+$app-color-tertiary: #F2F2F2;
+$app-color-text: #1E1E1E;
+$app-color-white: #ffffff;
+$app-color-black: #000000;
+$app-color-medium-grey: #DEDEDE;
+
+$app-color-app-bg: $app-color-white;
+
+/* Borders */
+$app-border-primary: 1px solid $app-color-medium-grey;
+
+/* Radius */
+$app-radius-round: 50%;
+$app-radius-pill: 100px;
+$app-radius: 4px;
+
+/* Screens */
+$app-screen-desktop: 1440px;
+$app-screen-mobile: 375px;
+
+/* Z indexes */
+$app-z-index-01: 1;
+$app-z-index-header: 2;
+
+// transition
+$app-transition: all 0.3s ease;
+

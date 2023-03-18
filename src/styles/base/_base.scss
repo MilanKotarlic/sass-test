@@ -1,0 +1,129 @@
+/**
+ * Base styles
+ *
+ */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: $app-color-text;
+  font-family: $app-font-stack;
+  font-size: $app-font-size-body;
+  background-color: $app-color-app-bg;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: none;
+  transition: $app-transition;
+  line-height: $app-line-height-stack;
+  font-weight: normal;
+}
+
+html,
+body,
+#app {
+  display: flex;
+  flex-direction: column;
+}
+
+body,
+#app {
+  flex: 1 1 auto;
+}
+
+html,
+body,
+main,
+#root {
+  display: flex;
+  flex-direction: column;
+}
+body,
+main,
+#root {
+  flex: 1 1 auto;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100%;
+}
+
+button {
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+a {
+  color: $app-color-text;
+  cursor: pointer;
+}
+
+svg {
+  fill: currentColor;
+}
+
+th {
+  font-weight: 600;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+button {
+  font-family: $app-font-stack;
+  line-height: $app-line-height-stack;
+  font-size: $app-font-size-stack;
+}
+
+input {
+  font-family: $app-font-stack;
+  font-size: $app-font-size-stack;
+
+  &::placeholder {
+    font-size: $app-font-size-stack;
+  }
+}
+
+h1 {
+  font-size: $app-font-size-xl;
+  line-height: $app-line-height-xl;
+  font-weight: 600;
+  font-family: $app-font-secondary;
+  @include media-min($app-screen-desktop) {
+    font-size: $app-font-size-xxl;
+    line-height: $app-line-height-xxl;
+  }
+}
+
+h2 {
+  font-size: $app-font-size-lg;
+  line-height: $app-line-height-lg;
+  font-family: $app-font-secondary;
+
+  @include media-min($app-screen-desktop) {
+    font-size: $app-font-size-xl;
+    line-height: $app-line-height-xl;
+  }
+}
+
+p {
+  font-size: $app-font-size-sm;
+  color: $app-color-text;
+  line-height: $app-line-height-stack;
+
+  @include media-min($app-screen-desktop) {
+    font-size: $app-font-size-stack;
+  }
+}

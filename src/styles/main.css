@@ -1,0 +1,284 @@
+/* Fonts */
+/* Colors */
+/* Borders */
+/* Radius */
+/* Screens */
+/* Z indexes */
+/**
+ * SASS mixins and functions
+ *
+ */
+/**
+ * Reset
+ *
+ */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+*,
+body,
+button,
+input,
+textarea,
+select {
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before,
+q:after {
+  content: "";
+}
+
+abbr,
+acronym {
+  border: 0;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+/**
+ * Base styles
+ *
+ */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: #1E1E1E;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 16px;
+  background-color: #ffffff;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: none;
+  transition: all 0.3s ease;
+  line-height: 1.5rem;
+  font-weight: normal;
+}
+
+html,
+body,
+#app {
+  display: flex;
+  flex-direction: column;
+}
+
+body,
+#app {
+  flex: 1 1 auto;
+}
+
+html,
+body,
+main,
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+body,
+main,
+#root {
+  flex: 1 1 auto;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+button:focus {
+  outline: none;
+}
+
+a {
+  color: #1E1E1E;
+  cursor: pointer;
+}
+
+svg {
+  fill: currentColor;
+}
+
+th {
+  font-weight: 600;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+button {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+input {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+}
+input::placeholder {
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+@media only screen and (min-width: 1440px) {
+  h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+@media only screen and (min-width: 1440px) {
+  h2 {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+}
+
+p {
+  font-size: 0.875rem;
+  color: #1E1E1E;
+  line-height: 1.5rem;
+}
+@media only screen and (min-width: 1440px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
+.c-icon {
+  height: 1.25rem;
+  width: 1.125rem;
+}
+
+.l-page-container {
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 0 rem(15px);
+  z-index: 1;
+  margin-top: 50px;
+}
+
+/*# sourceMappingURL=main.css.map */

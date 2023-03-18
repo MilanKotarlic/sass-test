@@ -1,0 +1,32 @@
+.c-breadcrumbs {
+	padding: 0 24px;
+
+	@include media-min($app-screen-desktop) {
+    padding: 0;
+  }
+	&__list {
+		display: flex;
+
+		margin-bottom: px-to-rem(18);
+
+		@include media-min($app-screen-desktop) {
+			margin-bottom: px-to-rem(26);
+		}
+
+		&-item {
+			&-link {
+				margin-right: px-to-rem(10);
+				font-weight: 400;
+				font-size: 13px;
+				line-height: 18px;
+				text-decoration: none;
+			}
+			&-icon {
+				display: inline-block;
+				margin-right: px-to-rem(12);
+				transform: rotate(90deg);
+				font-size: 12px;
+			}
+		}
+	}
+}

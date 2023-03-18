@@ -1,4 +1,13 @@
 .c-icon {
-  height: px-to-rem(20);
-  width: px-to-rem(18);
+  display: inline-block;
+  font-size: 20px;
+  color: $app-color-white;
+}
+
+.c-chevron-left {
+  transform: rotate(-90deg)
+}
+
+.c-chevron-right {
+  transform: rotate(90deg)
 }

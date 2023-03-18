@@ -1,0 +1,57 @@
+.header {
+	background: $app-color-primary;
+	padding: 0 px-to-rem(24);
+	max-width: 100vw;
+	height: $header-height;
+	margin-bottom: px-to-rem(31);
+
+	@include media-min($app-screen-desktop) {
+		height: $header-height-desktop;
+		margin-bottom: px-to-rem(40);
+	}
+
+	.header__content-wrapper {
+		display: flex;
+		justify-content: space-between;
+		height: 100%;
+
+		.header__left-content {
+			display: flex;
+			align-items: center;
+
+			.header__mobile-menu {
+				margin-right: px-to-rem(31);
+
+				@include media-min($app-screen-desktop) {
+					display: none;
+				}
+			}
+
+			.header__logo {
+				width: px-to-rem(105);
+				height: px-to-rem(28);
+				margin-right: px-to-rem(58);
+			}
+
+			.header__desktop-menu-and-search {
+				display: none;
+				align-items: center;
+
+				@include media-min($app-screen-desktop) {
+					display: flex;
+				}
+			}
+		}
+
+		.header__right-content {
+			display: flex;
+			align-items: center;
+
+			.header__right-content-icon {
+				&:not(:last-of-type) {
+					margin-right: px-to-rem(24);
+				}
+			}
+		}
+	}
+}

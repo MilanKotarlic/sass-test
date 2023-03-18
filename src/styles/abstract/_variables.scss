@@ -32,6 +32,7 @@ $app-color-text: #1E1E1E;
 $app-color-white: #ffffff;
 $app-color-black: #000000;
 $app-color-medium-grey: #DEDEDE;
+$app-color-dark-grey: #6E6E6E;
 
 $app-color-app-bg: $app-color-white;
 
@@ -53,4 +54,8 @@ $app-z-index-header: 2;
 
 // transition
 $app-transition: all 0.3s ease;
+
+$header-height: 70px;
+
+$header-height-desktop: 120px;
 

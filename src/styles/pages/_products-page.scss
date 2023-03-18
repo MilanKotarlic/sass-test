@@ -1,0 +1,138 @@
+.section-products {
+	&__title-wrapper {
+		position: relative;
+		margin: 0 px-to-rem(24) px-to-rem(24);
+
+		@include media-min($app-screen-desktop) {
+			margin: 0 0 px-to-rem(36);
+			padding: 0;
+		}
+	}
+
+	&__title-icons {
+		display: inline-block;
+		height: px-to-rem(20);
+		position: absolute;
+		right: 0;
+		bottom: px-to-rem(8);
+
+		i {
+			font-size: 20px;
+			margin-left: px-to-rem(20);
+		}
+	}
+
+	.section-products-container {
+		display: flex;
+		flex-wrap: wrap;
+
+		@include media-min($app-screen-desktop) {
+			flex-wrap: nowrap;
+		}
+	}
+
+	.section-products__image-slider {
+		position: relative;
+		width: 100vw;
+		height: auto;
+		margin-bottom: px-to-rem(24);
+
+		@include media-min($app-screen-desktop) {
+			min-width: px-to-rem(696);
+			margin-bottom: 0;
+		}
+
+		&-img {
+			@include full-size;
+			display: block;
+
+			@include media-min($app-screen-desktop) {
+				height: auto;
+			}
+		}
+
+		&-button {
+			position: absolute;
+			left: px-to-rem(12);
+			top: 50%;
+			transform: translateY(-50%);
+			width: px-to-rem(48);
+			height: px-to-rem(48);
+			border: none;
+			border-radius: $app-radius-round;
+			background-color: $app-color-tertiary;
+
+			&-icon {
+				font-size: 20px;
+			}
+
+			&--right {
+				left: initial;
+				right: px-to-rem(12);
+			}
+		}
+	}
+
+	.section-products__product-form-wrapper {
+		padding: 0 24px;
+		width: 100%;
+
+		@include media-min($app-screen-desktop) {
+			padding: 0;
+			margin-left: px-to-rem(32);
+		}
+	}
+
+	.section-products__product-form {
+		background-color: $app-color-tertiary;
+		padding: px-to-rem(24) px-to-rem(16) px-to-rem(32) px-to-rem(24);
+
+
+		@include media-min($app-screen-desktop) {
+			padding: px-to-rem(24) px-to-rem(32) px-to-rem(66);
+		}
+
+		&-title {
+			font-weight: 600;
+			margin-bottom: px-to-rem(14);
+
+			span {
+				color: $app-color-primary;
+			}
+		}
+
+		&-text {
+			margin-bottom: px-to-rem(19);
+		}
+
+		&-select-group {
+			display: flex;
+			flex-direction: column;
+
+			@include media-min($app-screen-desktop) {
+				flex-direction: row;
+
+				.c-select-wrapper {
+					&:first-of-type {
+						margin-right: px-to-rem(22);
+					}
+				}
+			}
+		}
+
+		&-checkbox-group {
+			display: flex;
+			flex-direction: column;
+		}
+
+		&-buttons-group {
+			display: flex;
+
+			button {
+				&:first-of-type {
+					margin-right: px-to-rem(8);
+				}
+			}
+		}
+	}
+}

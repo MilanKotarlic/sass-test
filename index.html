@@ -8,6 +8,118 @@
 	<title>Document</title>
 </head>
 <body>
-	<h1>Hello world</h1>
+	<header class="header">
+		<div class="l-page-container header__content-wrapper">
+			<div class="header__left-content">
+				<div class="header__mobile-menu">
+					<i class="fa-solid fa-bars c-icon"></i>
+				</div>
+				<img class="header__logo" src="./src/assets/images/LOGO.svg" alt="page-logo" />
+				<div class="header__desktop-menu-and-search">
+					<nav class="c-navigation c-navigation--header header__navigation">
+						<ul class="c-navigation__list">
+							<li class="c-navigation__list-item c-navigation__list-item--active">
+								<a class="c-navigation__list-item-link">Products</a>
+							</li>
+							<li class="c-navigation__list-item">
+								<a class="c-navigation__list-item-link">Services</a>
+							</li>
+							<li class="c-navigation__list-item">
+								<a class="c-navigation__list-item-link">About us</a>
+							</li>
+							<li class="c-navigation__list-item">
+								<a class="c-navigation__list-item-link">Contact</a>
+							</li>
+						</ul>
+					</nav>
+					<input class="c-input c-input--search" type="search" name="search-product-input" placeholder="Search" />
+				</div>
+			</div>
+			<div class="header__right-content">
+				<i class="fa-regular fa-user  c-icon header__right-content-icon"></i>
+				<i class="fa-regular fa-heart  c-icon header__right-content-icon"></i>
+				<i class="fa-solid fa-cart-shopping c-icon header__right-content-icon"></i>
+			</div>
+		</div>
+	</header>
+	<main>
+		<nav aria-label="Breadcrumb" class="l-page-container c-breadcrumbs">
+			<ul class="c-breadcrumbs__list">
+				<li class="c-breadcrumbs__list-item"><a class="c-breadcrumbs__list-item-link" href="#">Home</a> <i
+						class="fa-solid fa-chevron-up c-breadcrumbs__list-item-icon"></i></li>
+				<li class="c-breadcrumbs__list-item"><a class="c-breadcrumbs__list-item-link" href="#">Products</a> <i
+						class="fa-solid fa-chevron-up c-breadcrumbs__list-item-icon"></i></li>
+				<li class="c-breadcrumbs__list-item"><a class="c-breadcrumbs__list-item-link" href="#">Bikes</a> <i
+						class="fa-solid fa-chevron-up c-breadcrumbs__list-item-icon"></i></li>
+			</ul>
+		</nav>
+		<section class="section-products l-page-container">
+			<div class="section-products__title-wrapper">
+				<h1 class="section-products__title">Product name lorem ipsum
+
+				</h1>
+				<div class="section-products__title-icons">
+					<i class="fa-solid fa-arrow-left"></i>
+					<i class="fa-solid fa-arrow-right"></i>
+					<i class="fa-regular fa-heart"></i>
+					<i class="fa-solid fa-share-nodes"></i>
+				</div>
+			</div>
+			<div class="section-products-container">
+				<div class="section-products__image-slider">
+					<img class="section-products__image-slider-img" src="./src/assets/images/product.svg" alt="Product Name">
+					<button class="section-products__image-slider-button">
+						<i class="fa-solid fa-chevron-up section-products__image-slider-button-icon c-chevron-left"></i>
+					</button>
+					<button class="section-products__image-slider-button section-products__image-slider-button--right">
+						<i class="fa-solid fa-chevron-up section-products__image-slider-button-icon c-chevron-right"></i>
+					</button>
+				</div>
+				<div class="section-products__product-form-wrapper">
+					<div class="section-products__product-form">
+						<h5 class="section-products__product-form-title">In stock <span>- only 2 left</span></h5>
+						<p class="section-products__product-form-text">Duis aute irure dolor in reprehenderit in voluptate velit
+							esse cillum dolore eu fugiat nulla pariatur.
+							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+							laborum.</p>
+						<div class="section-products__product-form-select-group">
+							<div class="c-select-wrapper">
+								<label class="c-select__label" for="c-select">Model</label>
+								<select class="c-select" id="c-select">
+									<option value="option1">Option 1</option>
+									<option value="option2">Option 2</option>
+									<option value="option3">Option 3</option>
+								</select>
+							</div>
+							<div class="c-select-wrapper">
+								<label class="c-select__label" for="c-select">Color</label>
+								<select class="c-select" id="c-select">
+									<option value="option1">Option 1</option>
+									<option value="option2">Option 2</option>
+									<option value="option3">Option 3</option>
+								</select>
+							</div>
+						</div>
+						<div class="section-products__product-form-checkbox-group">
+							<label class="c-checkbox" for="my-checkbox-1">
+								<input checked type="checkbox" class="c-checkbox__input" id="my-checkbox-1" />
+								<span class="c-checkbox__icon"><i class="fas fa-check"></i></span>
+								Add option lorem ipsum
+							</label>
+							<label class="c-checkbox" for="my-checkbox">
+								<input type="checkbox" class="c-checkbox__input" id="my-checkbox" />
+								<span class="c-checkbox__icon"><i class="fas fa-check"></i></span>
+								Add option lorem ipsum
+							</label>
+						</div>
+						<div class="section-products__product-form-buttons-group">
+							<button class="c-button">Add to cart</button>
+							<button class="c-button c-button--secondary">Contact us</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
 </body>
 </html>

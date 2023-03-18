@@ -1,0 +1,112 @@
+.c-input {
+	background: $app-color-tertiary;
+	padding: px-to-rem(19) px-to-rem(16);
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	height: px-to-rem(56);
+	width: px-to-rem(256);
+	border: none;
+
+	&--search {
+		border-radius: $app-radius $app-radius 0 0;
+	}
+}
+
+.c-select-wrapper {
+	position: relative;
+	width: 100%;
+	height: px-to-rem(56);
+	margin-bottom: px-to-rem(16);
+	max-width: px-to-rem(288);
+
+	.c-select__label {
+		position: absolute;
+		top: px-to-rem(4);
+		left: px-to-rem(16);
+		font-weight: 400;
+		font-size: $app-font-size-xxs;
+		line-height: $app-line-height-sm;
+		color: $app-color-dark-grey;
+	}
+
+	.c-select {
+		display: block;
+		padding: px-to-rem(26) px-to-rem(16) px-to-rem(12);
+		font-style: normal;
+		font-weight: 400;
+		font-size: $app-font-size-sm;
+		line-height: $app-line-height-sm;
+		color: $app-color-text;
+		background-color: $app-color-white;
+		background-clip: padding-box;
+		border: none;
+		width: 100%;
+		height: px-to-rem(56);
+		background: $app-color-white;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		border-bottom: $app-border-primary;
+	}
+
+
+	&::after {
+		content: "\f078";
+		font-family: "Font Awesome 6 Free";
+		font-weight: 900;
+		position: absolute;
+		top: 50%;
+		right: 1rem;
+		transform: translateY(-50%);
+		pointer-events: none;
+	}
+
+	&:focus {
+		border-color: transparent;
+		outline: 0;
+	}
+}
+
+.c-checkbox {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	box-sizing: border-box;
+	margin-bottom: px-to-rem(14);
+
+	&__input {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+
+		&:checked+.c-checkbox__icon {
+			background-color: $app-color-secondary;
+			width: px-to-rem(20);
+			height: px-to-rem(20);
+
+			i {
+				display: block;
+			}
+		}
+	}
+
+	&__icon {
+		@include flex-center;
+		width: px-to-rem(20);
+		height: px-to-rem(20);
+		background-color: transparent;
+		border: $app-border-primary;
+		border-radius: $app-radius;
+		text-align: center;
+		margin-right: px-to-rem(12);
+
+		i {
+			display: none;
+			color: $app-color-white;
+
+		}
+	}
+}

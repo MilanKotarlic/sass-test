@@ -127,3 +127,14 @@ p {
     font-size: $app-font-size-stack;
   }
 }
+
+input {
+  color: $app-color-text;
+
+  @include placeholder {
+    color: $app-color-text;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

@@ -1,4 +1,5 @@
 .section-products {
+	border-bottom: $app-border-primary;
 	&__title-wrapper {
 		position: relative;
 		margin: 0 px-to-rem(24) px-to-rem(24);
@@ -25,9 +26,11 @@
 	.section-products-container {
 		display: flex;
 		flex-wrap: wrap;
+		margin-bottom: px-to-rem(32);
 
 		@include media-min($app-screen-desktop) {
 			flex-wrap: nowrap;
+			margin-bottom: px-to-rem(18);
 		}
 	}
 
@@ -132,6 +135,65 @@
 				&:first-of-type {
 					margin-right: px-to-rem(8);
 				}
+			}
+		}
+	}
+
+	.section-products__links {
+		display: flex;
+		padding-left: px-to-rem(24); 
+		margin-bottom: px-to-rem(20);
+
+		@include media-min($app-screen-desktop) {
+			padding-left: 0;
+
+			&-item {
+				margin-right: px-to-rem(32);
+			}
+		}
+		&-item {
+			margin-right: px-to-rem(24);
+			&-button {
+				line-height: $app-line-height-stack;
+				font-weight: 600;
+			}
+		}
+	}
+}
+
+.section-description {
+	padding: px-to-rem(40) 0;
+
+	&__image {
+		width: 100%;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	&__content {
+		padding: px-to-rem(24) px-to-rem(24) 0;
+
+		h2, p {
+			margin-bottom: px-to-rem(24);
+		}
+	}
+
+	@include media-min($app-screen-desktop) {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		padding: px-to-rem(60) 0 px-to-rem(65);
+
+		&__image {
+			width: px-to-rem(592);
+		}
+
+		&__content {
+			max-width: px-to-rem(488);
+			h2 {
+				margin-bottom: px-to-rem(32);
 			}
 		}
 	}

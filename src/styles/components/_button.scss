@@ -8,10 +8,17 @@
 	color: $app-color-white;
 	padding: px-to-rem(11) px-to-rem(24);
 	border: none;
+	white-space: nowrap;
 
 	&--secondary {
 		border: $app-border-primary;
 		color: $app-color-secondary;
+		background: $app-color-white;
+	}
+
+	&--tertiary {
+		color: $app-color-primary;
+		border: $app-border-primary;
 		background: $app-color-white;
 	}
 }

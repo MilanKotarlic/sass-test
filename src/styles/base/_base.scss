@@ -111,6 +111,7 @@ h2 {
   font-size: $app-font-size-lg;
   line-height: $app-line-height-lg;
   font-family: $app-font-secondary;
+  font-weight: 600;
 
   @include media-min($app-screen-desktop) {
     font-size: $app-font-size-xl;

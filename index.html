@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
 	<link rel="stylesheet" href="./src/styles/main.css">
 	<title>Document</title>
 </head>
+
 <body>
 	<header class="header">
 		<div class="l-page-container header__content-wrapper">
@@ -38,7 +40,7 @@
 			<div class="header__right-content">
 				<i class="fa-regular fa-user  c-icon header__right-content-icon"></i>
 				<i class="fa-regular fa-heart  c-icon header__right-content-icon"></i>
-				<i class="fa-solid fa-cart-shopping c-icon header__right-content-icon"></i>
+				<i class="fa-solid fa-cart-shopping c-icon c-icon--cart header__right-content-icon"><span>1</span></i>
 			</div>
 		</div>
 	</header>
@@ -53,73 +55,107 @@
 						class="fa-solid fa-chevron-up c-breadcrumbs__list-item-icon"></i></li>
 			</ul>
 		</nav>
-		<section class="section-products l-page-container">
-			<div class="section-products__title-wrapper">
-				<h1 class="section-products__title">Product name lorem ipsum
+		<section class="section-products">
+			<div class="l-page-container">
+				<div class="section-products__title-wrapper">
+					<h1 class="section-products__title">Product name lorem ipsum
 
-				</h1>
-				<div class="section-products__title-icons">
-					<i class="fa-solid fa-arrow-left"></i>
-					<i class="fa-solid fa-arrow-right"></i>
-					<i class="fa-regular fa-heart"></i>
-					<i class="fa-solid fa-share-nodes"></i>
+					</h1>
+					<div class="section-products__title-icons">
+						<i class="fa-solid fa-arrow-left"></i>
+						<i class="fa-solid fa-arrow-right"></i>
+						<i class="fa-regular fa-heart"></i>
+						<i class="fa-solid fa-share-nodes"></i>
+					</div>
 				</div>
-			</div>
-			<div class="section-products-container">
-				<div class="section-products__image-slider">
-					<img class="section-products__image-slider-img" src="./src/assets/images/product.svg" alt="Product Name">
-					<button class="section-products__image-slider-button">
-						<i class="fa-solid fa-chevron-up section-products__image-slider-button-icon c-chevron-left"></i>
-					</button>
-					<button class="section-products__image-slider-button section-products__image-slider-button--right">
-						<i class="fa-solid fa-chevron-up section-products__image-slider-button-icon c-chevron-right"></i>
-					</button>
-				</div>
-				<div class="section-products__product-form-wrapper">
-					<div class="section-products__product-form">
-						<h5 class="section-products__product-form-title">In stock <span>- only 2 left</span></h5>
-						<p class="section-products__product-form-text">Duis aute irure dolor in reprehenderit in voluptate velit
-							esse cillum dolore eu fugiat nulla pariatur.
-							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-							laborum.</p>
-						<div class="section-products__product-form-select-group">
-							<div class="c-select-wrapper">
-								<label class="c-select__label" for="c-select">Model</label>
-								<select class="c-select" id="c-select">
-									<option value="option1">Option 1</option>
-									<option value="option2">Option 2</option>
-									<option value="option3">Option 3</option>
-								</select>
+				<div class="section-products-container">
+					<div class="section-products__image-slider">
+						<img class="section-products__image-slider-img" src="./src/assets/images/product.svg" alt="Product Name">
+						<button class="section-products__image-slider-button">
+							<i class="fa-solid fa-chevron-up section-products__image-slider-button-icon c-chevron-left"></i>
+						</button>
+						<button class="section-products__image-slider-button section-products__image-slider-button--right">
+							<i class="fa-solid fa-chevron-up section-products__image-slider-button-icon c-chevron-right"></i>
+						</button>
+					</div>
+					<div class="section-products__product-form-wrapper">
+						<div class="section-products__product-form">
+							<h5 class="section-products__product-form-title">In stock <span>- only 2 left</span></h5>
+							<p class="section-products__product-form-text">Duis aute irure dolor in reprehenderit in voluptate velit
+								esse cillum dolore eu fugiat nulla pariatur.
+								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+								laborum.</p>
+							<div class="section-products__product-form-select-group">
+								<div class="c-select-wrapper">
+									<label class="c-select__label" for="c-select">Model</label>
+									<select class="c-select" id="c-select">
+										<option value="option1">Option 1</option>
+										<option value="option2">Option 2</option>
+										<option value="option3">Option 3</option>
+									</select>
+								</div>
+								<div class="c-select-wrapper">
+									<label class="c-select__label" for="c-select">Color</label>
+									<select class="c-select" id="c-select">
+										<option value="option1">Option 1</option>
+										<option value="option2">Option 2</option>
+										<option value="option3">Option 3</option>
+									</select>
+								</div>
 							</div>
-							<div class="c-select-wrapper">
-								<label class="c-select__label" for="c-select">Color</label>
-								<select class="c-select" id="c-select">
-									<option value="option1">Option 1</option>
-									<option value="option2">Option 2</option>
-									<option value="option3">Option 3</option>
-								</select>
+							<div class="section-products__product-form-checkbox-group">
+								<label class="c-checkbox" for="my-checkbox-1">
+									<input checked type="checkbox" class="c-checkbox__input" id="my-checkbox-1" />
+									<span class="c-checkbox__icon"><i class="fas fa-check"></i></span>
+									Add option lorem ipsum
+								</label>
+								<label class="c-checkbox" for="my-checkbox">
+									<input type="checkbox" class="c-checkbox__input" id="my-checkbox" />
+									<span class="c-checkbox__icon"><i class="fas fa-check"></i></span>
+									Add option lorem ipsum
+								</label>
 							</div>
-						</div>
-						<div class="section-products__product-form-checkbox-group">
-							<label class="c-checkbox" for="my-checkbox-1">
-								<input checked type="checkbox" class="c-checkbox__input" id="my-checkbox-1" />
-								<span class="c-checkbox__icon"><i class="fas fa-check"></i></span>
-								Add option lorem ipsum
-							</label>
-							<label class="c-checkbox" for="my-checkbox">
-								<input type="checkbox" class="c-checkbox__input" id="my-checkbox" />
-								<span class="c-checkbox__icon"><i class="fas fa-check"></i></span>
-								Add option lorem ipsum
-							</label>
-						</div>
-						<div class="section-products__product-form-buttons-group">
-							<button class="c-button">Add to cart</button>
-							<button class="c-button c-button--secondary">Contact us</button>
+							<div class="section-products__product-form-buttons-group">
+								<button class="c-button">Add to cart</button>
+								<button class="c-button c-button--secondary">Contact us</button>
+							</div>
 						</div>
 					</div>
 				</div>
+				<ul class="section-products__links">
+					<li class="section-products__links-item">
+						<a class="section-products__links-item-button">Description</a>
+					</li>
+					<li>
+					<li class="section-products__links-item">
+						<a class="section-products__links-item-button">Specifications</a>
+					</li>
+					<li>
+					<li class="section-products__links-item">
+						<a class="section-products__links-item-button">Reviews(7)</a>
+					</li>
+				</ul>
 			</div>
+		</section>
+		
+		<section class="section-description l-page-container">
+				<div class="section-description__image">
+					<img src="./src/assets/images/bike-ride.svg"  alt="bike-ride"/>
+				</div>
+				<div class="section-description__content">
+					<h2>Product description</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+						dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+						ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+						nulla pariatur. </p>
+					<p>
+						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+						laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+					</p>
+					<button class="c-button c-button--tertiary" >More info</button>
+				</div>
 		</section>
 	</main>
 </body>
+
 </html>

@@ -2,6 +2,24 @@
   display: inline-block;
   font-size: 20px;
   color: $app-color-white;
+
+  &--cart {
+    position: relative;
+    span {
+      @include flex-center;
+      position: absolute;
+      background: $app-color-secondary;
+      font-weight: 400;
+      font-size: px-to-rem(15);
+      line-height: $app-line-height-sm;
+      width: px-to-rem(20);
+      height: px-to-rem(20);
+      border-radius: $app-radius-round;
+      font-family: $app-font-stack;
+      bottom: px-to-rem(-10);
+      right: px-to-rem(-10);
+    }
+  }
 }
 
 .c-chevron-left {

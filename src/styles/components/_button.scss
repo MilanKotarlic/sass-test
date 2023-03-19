@@ -10,6 +10,11 @@
 	border: none;
 	white-space: nowrap;
 
+	&--primary {
+		background: $app-color-primary;
+		color: $app-color-white;
+	}
+
 	&--secondary {
 		border: $app-border-primary;
 		color: $app-color-secondary;
@@ -20,5 +25,10 @@
 		color: $app-color-primary;
 		border: $app-border-primary;
 		background: $app-color-white;
+	}
+
+	&--flat {
+		background: transparent;
+		border: none;
 	}
 }

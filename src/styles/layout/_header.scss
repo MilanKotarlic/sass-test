@@ -47,7 +47,7 @@
 			display: flex;
 			align-items: center;
 
-			.header__right-content-icon {
+			.header__right-content-icon-button {
 				&:not(:last-of-type) {
 					margin-right: px-to-rem(24);
 				}

@@ -1,5 +1,6 @@
 .section-products {
 	border-bottom: $app-border-primary;
+
 	&__title-wrapper {
 		position: relative;
 		margin: 0 px-to-rem(24) px-to-rem(24);
@@ -7,6 +8,14 @@
 		@include media-min($app-screen-desktop) {
 			margin: 0 0 px-to-rem(36);
 			padding: 0;
+		}
+	}
+
+	&__title {
+		max-width: px-to-rem(380);
+
+		@include media-min($app-screen-desktop) {
+			max-width: initial;
 		}
 	}
 
@@ -141,7 +150,7 @@
 
 	.section-products__links {
 		display: flex;
-		padding-left: px-to-rem(24); 
+		padding-left: px-to-rem(24);
 		margin-bottom: px-to-rem(20);
 
 		@include media-min($app-screen-desktop) {
@@ -151,8 +160,10 @@
 				margin-right: px-to-rem(32);
 			}
 		}
+
 		&-item {
 			margin-right: px-to-rem(24);
+
 			&-button {
 				line-height: $app-line-height-stack;
 				font-weight: 600;
@@ -175,7 +186,8 @@
 	&__content {
 		padding: px-to-rem(24) px-to-rem(24) 0;
 
-		h2, p {
+		h2,
+		p {
 			margin-bottom: px-to-rem(24);
 		}
 	}
@@ -192,6 +204,7 @@
 
 		&__content {
 			max-width: px-to-rem(488);
+
 			h2 {
 				margin-bottom: px-to-rem(32);
 			}

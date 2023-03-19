@@ -1,0 +1,54 @@
+.c-modal-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	background: rgba(0, 0, 0, 0.6);
+	height: 100vh;
+	width: 100vw;
+	z-index: 2;
+	padding: px-to-rem(24);
+	transition: $app-transition;
+	opacity: 0;
+
+	&.loaded {
+		opacity: 1;
+	}
+
+	.c-modal {
+		background: $app-color-white;
+		padding: px-to-rem(20) px-to-rem(24) px-to-rem(24);
+
+		&__header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: px-to-rem(16);
+
+			i {
+				font-size: 20px;
+			}
+		}
+
+		p {
+			margin-bottom: px-to-rem(24);
+			font-size: $app-font-size-stack;
+		}
+
+		input {
+			margin-bottom: px-to-rem(16);
+			width: 100%;
+		}
+
+		textarea {
+			margin-bottom: px-to-rem(24);
+			height: px-to-rem(128);
+			width: 100%;
+		}
+
+		&__buttons {
+			display: flex;
+			justify-content: flex-end;
+		}
+	}
+}

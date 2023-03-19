@@ -7,6 +7,7 @@
 	height: px-to-rem(56);
 	width: px-to-rem(256);
 	border: none;
+	outline: none;
 
 	&--search {
 		border-radius: $app-radius $app-radius 0 0;
@@ -47,13 +48,14 @@
 		-webkit-appearance: none;
 		-moz-appearance: none;
 		border-bottom: $app-border-primary;
+		outline: none;
 	}
 
 
 	&::after {
 		content: "\f078";
 		font-family: "Font Awesome 6 Free";
-		font-weight: 900;
+		font-weight: 600;
 		position: absolute;
 		top: 50%;
 		right: 1rem;

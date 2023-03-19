@@ -6,10 +6,30 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./src/styles/main.css">
+	<script src="./index.js" ></script>
 	<title>Document</title>
 </head>
 
 <body>
+	<div class="c-modal-container" id="modal">
+		<div class="c-modal">
+			<div class="c-modal__header">
+				<h2>Contact us</h2>
+				<a id="closeButton">
+					<i class="fa-solid fa-x"></i>
+				</a>
+			</div>
+			<p>We’ll get back to you as soon as possible.</p>
+			<div class="c-modal__input-wrapper">
+				<input type="email" class="c-input"  placeholder="Your e-mail"/>
+				<textarea class="c-input"  placeholder="Your message"></textarea>
+			</div>
+			<div class="c-modal__buttons">
+				<button class="c-button c-button--tertiary c-button--flat" id="cancelButton">Cancel</button>
+				<button class="c-button c-button--primary">Send message</button>
+			</div>
+		</div>
+	</div>
 	<header class="header">
 		<div class="l-page-container header__content-wrapper">
 			<div class="header__left-content">
@@ -38,9 +58,15 @@
 				</div>
 			</div>
 			<div class="header__right-content">
-				<i class="fa-regular fa-user  c-icon header__right-content-icon"></i>
-				<i class="fa-regular fa-heart  c-icon header__right-content-icon"></i>
-				<i class="fa-solid fa-cart-shopping c-icon c-icon--cart header__right-content-icon"><span>1</span></i>
+				<a class="header__right-content-icon-button">
+					<i class="fa-regular fa-user  c-icon "></i>
+				</a>
+				<a class="header__right-content-icon-button">
+					<i class="fa-regular fa-heart  c-icon"></i>
+				</a>
+				<a class="header__right-content-icon-button">
+					<i class="fa-solid fa-cart-shopping c-icon c-icon--cart"><span>1</span></i>
+				</a>
 			</div>
 		</div>
 	</header>

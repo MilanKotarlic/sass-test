@@ -32,10 +32,15 @@
 				height: px-to-rem(28);
 				margin-right: px-to-rem(48);
 
+				img {
+					@include full-size
+				}
+				
 				@include media-min($app-screen-desktop) {
 					width: px-to-rem(150);
 					height: px-to-rem(40);
 				}
+
 			}
 
 			.header__desktop-menu-and-search {

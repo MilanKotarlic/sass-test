@@ -11,11 +11,11 @@
 </head>
 
 <body>
-	<div class="c-modal-container" id="modal">
+	<div class="c-modal-container" id="modal" aria-hidden="true">
 		<div class="c-modal">
 			<div class="c-modal__header">
 				<h2>Contact us</h2>
-				<a id="closeButton">
+				<a id="closeButton" aria-label="Close modal">
 					<i class="fa-solid fa-x"></i>
 				</a>
 			</div>
@@ -30,27 +30,31 @@
 			</div>
 		</div>
 	</div>
-	<header class="header">
+	<header class="header" role="banner">
 		<div class="l-page-container header__content-wrapper">
 			<div class="header__left-content">
 				<div class="header__mobile-menu">
-					<i class="fa-solid fa-bars c-icon"></i>
+					<button class="c-button-clear">
+						<i class="fa-solid fa-bars c-icon"></i>
+					</button>
 				</div>
-				<img class="header__logo" src="./src/assets/images/LOGO.svg" alt="page-logo" />
+				<a class="header__logo" href="/" aria-label="Homepage">
+					<img class="header__logo-img" src="./src/assets/images/LOGO.svg" alt="page-logo" />
+				</a>
 				<div class="header__desktop-menu-and-search">
 					<nav class="c-navigation c-navigation--header header__navigation">
 						<ul class="c-navigation__list">
 							<li class="c-navigation__list-item c-navigation__list-item--active">
-								<a class="c-navigation__list-item-link">Products</a>
+								<a href="/" class="c-navigation__list-item-link">Products</a>
 							</li>
 							<li class="c-navigation__list-item">
-								<a class="c-navigation__list-item-link">Services</a>
+								<a href="/" class="c-navigation__list-item-link">Services</a>
 							</li>
 							<li class="c-navigation__list-item">
-								<a class="c-navigation__list-item-link">About us</a>
+								<a href="/" class="c-navigation__list-item-link">About us</a>
 							</li>
 							<li class="c-navigation__list-item">
-								<a class="c-navigation__list-item-link">Contact</a>
+								<a href="/" class="c-navigation__list-item-link">Contact</a>
 							</li>
 						</ul>
 					</nav>
@@ -61,13 +65,13 @@
 				</div>
 			</div>
 			<div class="header__right-content">
-				<a class="header__right-content-icon-button">
+				<a class="header__right-content-icon-button" aria-label="My account">
 					<i class="fa-regular fa-user  c-icon "></i>
 				</a>
-				<a class="header__right-content-icon-button">
+				<a class="header__right-content-icon-button" aria-label="My wishlist">
 					<i class="fa-regular fa-heart  c-icon"></i>
 				</a>
-				<a class="header__right-content-icon-button">
+				<a class="header__right-content-icon-button" aria-label="Shopping cart">
 					<i class="fa-solid fa-cart-shopping c-icon c-icon--cart"><span>1</span></i>
 				</a>
 			</div>
@@ -75,13 +79,19 @@
 	</header>
 	<main>
 		<nav aria-label="Breadcrumb" class="l-page-container c-breadcrumbs">
-			<ul class="c-breadcrumbs__list">
-				<li class="c-breadcrumbs__list-item"><a class="c-breadcrumbs__list-item-link" href="#">Home</a> <i
-						class="fa-solid fa-chevron-up c-breadcrumbs__list-item-icon"></i></li>
-				<li class="c-breadcrumbs__list-item"><a class="c-breadcrumbs__list-item-link" href="#">Products</a> <i
-						class="fa-solid fa-chevron-up c-breadcrumbs__list-item-icon"></i></li>
-				<li class="c-breadcrumbs__list-item"><a class="c-breadcrumbs__list-item-link" href="#">Bikes</a> <i
-						class="fa-solid fa-chevron-up c-breadcrumbs__list-item-icon"></i></li>
+			<ul class="c-breadcrumbs__list" role="list">
+				<li class="c-breadcrumbs__list-item" role="listitem">
+					<a class="c-breadcrumbs__list-item-link" href="#">Home</a>
+					<i class="fa-solid fa-chevron-up c-breadcrumbs__list-item-icon" aria-hidden="true"></i>
+				</li>
+				<li class="c-breadcrumbs__list-item" role="listitem">
+					<a class="c-breadcrumbs__list-item-link"
+						href="#">Products</a> <i class="fa-solid fa-chevron-up c-breadcrumbs__list-item-icon"
+						aria-hidden="true"></i></li>
+				<li class="c-breadcrumbs__list-item" role="listitem">
+					<a class="c-breadcrumbs__list-item-link" href="#">Bikes</a>
+					<i class="fa-solid fa-chevron-up c-breadcrumbs__list-item-icon" aria-hidden="true"></i>
+				</li>
 			</ul>
 		</nav>
 		<section class="section-products">
@@ -139,7 +149,7 @@
 								<label class="c-checkbox" for="my-checkbox-1">
 									<input checked type="checkbox" class="c-checkbox__input" id="my-checkbox-1" />
 									<span class="c-checkbox__icon"><i class="fas fa-check"></i></span>
-										Add option lorem ipsum
+									Add option lorem ipsum
 								</label>
 								<label class="c-checkbox c-checkbox--desktop-spacing" for="my-checkbox">
 									<input type="checkbox" class="c-checkbox__input" id="my-checkbox" />

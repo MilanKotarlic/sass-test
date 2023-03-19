@@ -1,5 +1,20 @@
 {
-	"scripts": {
+  "scripts": {
     "watch-sass": "sass src/styles/main.scss src/styles/main.css --watch"
-  }
+  },
+  "name": "sass-task",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "sass-task"
+  },
+  "keywords": [
+    "sass",
+    "html",
+    "css"
+  ],
+  "author": "Milan Kotarlic",
+  "license": "ISC",
+  "description": ""
 }

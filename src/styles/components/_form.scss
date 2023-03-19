@@ -13,10 +13,10 @@
 		border-radius: $app-radius $app-radius 0 0;
 		padding-right: px-to-rem(36);
 
-		&::-webkit-search-cancel-button{
+		&::-webkit-search-cancel-button {
 			display: none;
 			-webkit-appearance: none;
-	}
+		}
 	}
 }
 
@@ -65,12 +65,12 @@
 		width: 100%;
 		height: px-to-rem(56);
 		background: $app-color-white;
+		appearance: none;
 		-webkit-appearance: none;
 		-moz-appearance: none;
 		border-bottom: $app-border-primary;
 		outline: none;
 	}
-
 
 	&::after {
 		content: "\f078";
@@ -105,13 +105,13 @@
 		height: px-to-rem(20);
 		line-height: px-to-rem(20);
 	}
-	
+
 	&--desktop-spacing {
 		@include media-min($app-screen-desktop) {
 			margin-bottom: px-to-rem(24);
 		}
 	}
-	
+
 	&__input {
 		position: absolute;
 		opacity: 0;

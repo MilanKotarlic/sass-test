@@ -142,4 +142,11 @@ input {
 
 textarea {
   resize: none;
+  
+  @include placeholder {
+    color: $app-color-text;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+  }
 }

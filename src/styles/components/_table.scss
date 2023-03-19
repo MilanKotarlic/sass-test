@@ -1,0 +1,42 @@
+.c-table-wrapper {
+	overflow-x: auto;
+	max-width: 100%;
+	padding: 0 24px;
+
+	@include media-min($app-screen-desktop) {
+		padding: 0;
+	}
+}
+
+.c-table {
+	width: 100%;
+	min-width: px-to-rem(900);
+	border-collapse: collapse;
+
+	&__heading {
+		color: $app-color-primary;
+		font-weight: 600;
+	}
+
+	&__row {
+		height: 40px;
+		padding-left: 20px;
+		position: relative;
+
+		&:nth-of-type(even) {
+			background-color: $app-color-white;
+		}
+	}
+
+	&__heading,
+	&__data {
+		white-space: nowrap;
+		font-size: $app-font-size-sm;
+		line-height: $app-line-height-stack;
+
+		&:first-child {
+			padding-left: 20px;
+			padding-right: 0;
+		}
+	}
+}

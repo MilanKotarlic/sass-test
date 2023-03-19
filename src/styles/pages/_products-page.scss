@@ -211,3 +211,21 @@
 		}
 	}
 }
+
+.section-specifications {
+	padding: px-to-rem(32) 0 px-to-rem(70);
+	background: $app-color-tertiary;
+
+	&__title {
+		margin-bottom: px-to-rem(32);
+		padding-left: px-to-rem(24);
+	}
+
+	@include media-min($app-screen-desktop) {
+		padding: px-to-rem(39) 0 px-to-rem(88);
+
+		&__title {
+			padding-left: 0;
+		}
+	}
+}

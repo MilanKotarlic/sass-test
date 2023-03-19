@@ -2,8 +2,8 @@
 	background: $app-color-tertiary;
 	padding: px-to-rem(19) px-to-rem(16);
 	font-weight: 400;
-	font-size: 14px;
-	line-height: 18px;
+	font-size: $app-font-size-sm;
+	line-height: $app-line-height-sm;
 	height: px-to-rem(56);
 	width: px-to-rem(256);
 	border: none;
@@ -11,6 +11,22 @@
 
 	&--search {
 		border-radius: $app-radius $app-radius 0 0;
+		padding-right: px-to-rem(36);
+
+		&::-webkit-search-cancel-button{
+			display: none;
+			-webkit-appearance: none;
+	}
+	}
+}
+
+.c-input-search-wrapper {
+	position: relative;
+
+	i {
+		position: absolute;
+		right: px-to-rem(17);
+		top: px-to-rem(19);
 	}
 }
 
@@ -20,6 +36,10 @@
 	height: px-to-rem(56);
 	margin-bottom: px-to-rem(16);
 	max-width: px-to-rem(288);
+
+	@include media-min($app-screen-desktop) {
+		margin-bottom: px-to-rem(21);
+	}
 
 	.c-select__label {
 		position: absolute;
@@ -61,6 +81,7 @@
 		right: 1rem;
 		transform: translateY(-50%);
 		pointer-events: none;
+		font-size: px-to-rem(15);
 	}
 
 	&:focus {
@@ -71,14 +92,26 @@
 
 .c-checkbox {
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	cursor: pointer;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 24px;
 	box-sizing: border-box;
 	margin-bottom: px-to-rem(14);
+	font-size: $app-font-size-sm;
+	font-weight: 400;
+	line-height: $app-line-height-stack;
 
+	@include media-min($app-screen-desktop) {
+		margin-bottom: px-to-rem(12);
+		height: px-to-rem(20);
+		line-height: px-to-rem(20);
+	}
+	
+	&--desktop-spacing {
+		@include media-min($app-screen-desktop) {
+			margin-bottom: px-to-rem(24);
+		}
+	}
+	
 	&__input {
 		position: absolute;
 		opacity: 0;
@@ -88,6 +121,7 @@
 			background-color: $app-color-secondary;
 			width: px-to-rem(20);
 			height: px-to-rem(20);
+			border: 2px solid transparent;
 
 			i {
 				display: block;
@@ -98,12 +132,13 @@
 	&__icon {
 		@include flex-center;
 		width: px-to-rem(20);
+		min-width: px-to-rem(20);
 		height: px-to-rem(20);
 		background-color: transparent;
-		border: $app-border-primary;
+		border: $app-border-secondary;
 		border-radius: $app-radius;
 		text-align: center;
-		margin-right: px-to-rem(12);
+		margin: px-to-rem(2) px-to-rem(12) 0 0;
 
 		i {
 			display: none;

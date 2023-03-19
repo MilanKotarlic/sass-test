@@ -33,11 +33,14 @@ $app-color-white: #ffffff;
 $app-color-black: #000000;
 $app-color-medium-grey: #DEDEDE;
 $app-color-dark-grey: #6E6E6E;
+$app-color-grey: #BDBDBD;
 
 $app-color-app-bg: $app-color-white;
 
 /* Borders */
 $app-border-primary: 1px solid $app-color-medium-grey;
+$app-border-secondary:  2px solid $app-color-grey;
+$app-border-thick: 5px solid $app-color-black;
 
 /* Radius */
 $app-radius-round: 50%;
@@ -51,6 +54,7 @@ $app-screen-mobile: 375px;
 /* Z indexes */
 $app-z-index-01: 1;
 $app-z-index-header: 2;
+$app-z-index-modal: 3;
 
 // transition
 $app-transition: all 0.3s ease;

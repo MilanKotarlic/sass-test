@@ -1,6 +1,6 @@
 .c-icon {
   display: inline-block;
-  font-size: 20px;
+  font-size: px-to-rem(20);
   color: $app-color-white;
 
   &--cart {

@@ -9,6 +9,7 @@
 	padding: px-to-rem(11) px-to-rem(24);
 	border: none;
 	white-space: nowrap;
+	min-width: px-to-rem(140);
 
 	&--primary {
 		background: $app-color-primary;
@@ -30,5 +31,6 @@
 	&--flat {
 		background: transparent;
 		border: none;
+		min-width: initial;
 	}
 }

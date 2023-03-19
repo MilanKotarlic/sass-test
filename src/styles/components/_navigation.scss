@@ -4,13 +4,13 @@
 
 		&-item {
 			padding: 0 px-to-rem(9);
-			margin-right: px-to-rem(32);
+			margin-right: px-to-rem(25);
 
 			&-link {
 				color: $app-color-white;
 				font-weight: 600;
-				font-size: 18px;
-				line-height: 24px;
+				font-size: $app-font-size-md;
+				line-height: $app-line-height-stack;
 			}
 		}
 	}
@@ -30,7 +30,7 @@
 
 			&--active {
 				color: $app-color-text;
-				border-bottom: 5px solid $app-color-black;
+				border-bottom: $app-border-thick;
 
 				.c-navigation__list-item-link {
 					color: $app-color-text;

@@ -26,8 +26,13 @@
 		right: 0;
 		bottom: px-to-rem(8);
 
+		@include media-min($app-screen-desktop) {
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
 		i {
-			font-size: 20px;
+			font-size: px-to-rem(20);
 			margin-left: px-to-rem(20);
 		}
 	}
@@ -75,7 +80,7 @@
 			background-color: $app-color-tertiary;
 
 			&-icon {
-				font-size: 20px;
+				font-size: px-to-rem(20);
 			}
 
 			&--right {
@@ -86,7 +91,7 @@
 	}
 
 	.section-products__product-form-wrapper {
-		padding: 0 24px;
+		padding: 0 px-to-rem(24);
 		width: 100%;
 
 		@include media-min($app-screen-desktop) {
@@ -115,6 +120,10 @@
 
 		&-text {
 			margin-bottom: px-to-rem(19);
+
+			@include media-min($app-screen-desktop) {
+				margin-bottom: px-to-rem(24);
+			}
 		}
 
 		&-select-group {
@@ -151,10 +160,11 @@
 	.section-products__links {
 		display: flex;
 		padding-left: px-to-rem(24);
-		margin-bottom: px-to-rem(20);
+		margin-bottom: px-to-rem(19);
 
 		@include media-min($app-screen-desktop) {
 			padding-left: 0;
+			margin-bottom: px-to-rem(20);
 
 			&-item {
 				margin-right: px-to-rem(32);
@@ -184,11 +194,19 @@
 	}
 
 	&__content {
-		padding: px-to-rem(24) px-to-rem(24) 0;
+		padding: px-to-rem(21) px-to-rem(24) 0;
 
 		h2,
 		p {
 			margin-bottom: px-to-rem(24);
+		}
+
+		p {
+			font-size: $app-font-size-stack;
+
+			&:first-of-type {
+				margin-bottom: px-to-rem(12);
+			}
 		}
 	}
 
@@ -213,11 +231,11 @@
 }
 
 .section-specifications {
-	padding: px-to-rem(32) 0 px-to-rem(70);
+	padding: px-to-rem(32) 0 px-to-rem(63);
 	background: $app-color-tertiary;
 
 	&__title {
-		margin-bottom: px-to-rem(32);
+		margin-bottom: px-to-rem(23);
 		padding-left: px-to-rem(24);
 	}
 

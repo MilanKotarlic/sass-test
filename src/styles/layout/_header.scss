@@ -30,7 +30,12 @@
 			.header__logo {
 				width: px-to-rem(105);
 				height: px-to-rem(28);
-				margin-right: px-to-rem(58);
+				margin-right: px-to-rem(48);
+
+				@include media-min($app-screen-desktop) {
+					width: px-to-rem(150);
+					height: px-to-rem(40);
+				}
 			}
 
 			.header__desktop-menu-and-search {

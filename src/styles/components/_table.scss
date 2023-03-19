@@ -1,7 +1,7 @@
 .c-table-wrapper {
 	overflow-x: auto;
 	max-width: 100%;
-	padding: 0 24px;
+	padding: 0 px-to-rem(24);
 
 	@include media-min($app-screen-desktop) {
 		padding: 0;
@@ -19,8 +19,8 @@
 	}
 
 	&__row {
-		height: 40px;
-		padding-left: 20px;
+		height: px-to-rem(40);
+		padding-left: px-to-rem(20);
 		position: relative;
 
 		&:nth-of-type(even) {
@@ -33,9 +33,14 @@
 		white-space: nowrap;
 		font-size: $app-font-size-sm;
 		line-height: $app-line-height-stack;
+		min-width: px-to-rem(93);
+
+		@include media-min($app-screen-desktop) {
+			min-width: initial;
+		}
 
 		&:first-child {
-			padding-left: 20px;
+			padding-left: px-to-rem(20);
 			padding-right: 0;
 		}
 	}

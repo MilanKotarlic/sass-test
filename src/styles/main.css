@@ -303,7 +303,7 @@ textarea {
 
 .c-icon {
   display: inline-block;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #ffffff;
 }
 .c-icon--cart {
@@ -335,7 +335,7 @@ textarea {
 }
 
 .c-breadcrumbs {
-  padding: 0 24px;
+  padding: 0 1.5rem;
 }
 @media only screen and (min-width: 1240px) {
   .c-breadcrumbs {
@@ -352,20 +352,23 @@ textarea {
   }
 }
 .c-breadcrumbs__list-item {
+  display: flex;
   cursor: pointer;
+  height: 1.125rem;
 }
 .c-breadcrumbs__list-item-link {
-  margin-right: 0.625rem;
+  display: inline-block;
+  margin-right: 0.5rem;
   font-weight: 400;
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
   text-decoration: none;
 }
 .c-breadcrumbs__list-item-icon {
   display: inline-block;
-  margin-right: 0.75rem;
+  margin-right: 0.875rem;
   transform: rotate(90deg);
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .c-navigation__list {
@@ -373,13 +376,13 @@ textarea {
 }
 .c-navigation__list-item {
   padding: 0 0.5625rem;
-  margin-right: 2rem;
+  margin-right: 1.5625rem;
 }
 .c-navigation__list-item-link {
   color: #ffffff;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
 }
 
 .c-navigation--header .c-navigation__list {
@@ -412,6 +415,7 @@ textarea {
   padding: 0.6875rem 1.5rem;
   border: none;
   white-space: nowrap;
+  min-width: 8.75rem;
 }
 .c-button--primary {
   background: #FE5E41;
@@ -430,14 +434,15 @@ textarea {
 .c-button--flat {
   background: transparent;
   border: none;
+  min-width: initial;
 }
 
 .c-input {
   background: #F2F2F2;
   padding: 1.1875rem 1rem;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
   height: 3.5rem;
   width: 16rem;
   border: none;
@@ -445,6 +450,20 @@ textarea {
 }
 .c-input--search {
   border-radius: 4px 4px 0 0;
+  padding-right: 2.25rem;
+}
+.c-input--search::-webkit-search-cancel-button {
+  display: none;
+  -webkit-appearance: none;
+}
+
+.c-input-search-wrapper {
+  position: relative;
+}
+.c-input-search-wrapper i {
+  position: absolute;
+  right: 1.0625rem;
+  top: 1.1875rem;
 }
 
 .c-select-wrapper {
@@ -453,6 +472,11 @@ textarea {
   height: 3.5rem;
   margin-bottom: 1rem;
   max-width: 18rem;
+}
+@media only screen and (min-width: 1240px) {
+  .c-select-wrapper {
+    margin-bottom: 1.3125rem;
+  }
 }
 .c-select-wrapper .c-select__label {
   position: absolute;
@@ -491,6 +515,7 @@ textarea {
   right: 1rem;
   transform: translateY(-50%);
   pointer-events: none;
+  font-size: 0.9375rem;
 }
 .c-select-wrapper:focus {
   border-color: transparent;
@@ -499,13 +524,25 @@ textarea {
 
 .c-checkbox {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   cursor: pointer;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
   box-sizing: border-box;
   margin-bottom: 0.875rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+@media only screen and (min-width: 1240px) {
+  .c-checkbox {
+    margin-bottom: 0.75rem;
+    height: 1.25rem;
+    line-height: 1.25rem;
+  }
+}
+@media only screen and (min-width: 1240px) {
+  .c-checkbox--desktop-spacing {
+    margin-bottom: 1.5rem;
+  }
 }
 .c-checkbox__input {
   position: absolute;
@@ -516,6 +553,7 @@ textarea {
   background-color: #00A878;
   width: 1.25rem;
   height: 1.25rem;
+  border: 2px solid transparent;
 }
 .c-checkbox__input:checked + .c-checkbox__icon i {
   display: block;
@@ -525,12 +563,13 @@ textarea {
   justify-content: center;
   align-items: center;
   width: 1.25rem;
+  min-width: 1.25rem;
   height: 1.25rem;
   background-color: transparent;
-  border: 1px solid #DEDEDE;
+  border: 2px solid #BDBDBD;
   border-radius: 4px;
   text-align: center;
-  margin-right: 0.75rem;
+  margin: 0.125rem 0.75rem 0 0;
 }
 .c-checkbox__icon i {
   display: none;
@@ -540,7 +579,7 @@ textarea {
 .c-table-wrapper {
   overflow-x: auto;
   max-width: 100%;
-  padding: 0 24px;
+  padding: 0 1.5rem;
 }
 @media only screen and (min-width: 1240px) {
   .c-table-wrapper {
@@ -558,8 +597,8 @@ textarea {
   font-weight: 600;
 }
 .c-table__row {
-  height: 40px;
-  padding-left: 20px;
+  height: 2.5rem;
+  padding-left: 1.25rem;
   position: relative;
 }
 .c-table__row:nth-of-type(even) {
@@ -569,9 +608,15 @@ textarea {
   white-space: nowrap;
   font-size: 0.875rem;
   line-height: 1.5rem;
+  min-width: 5.8125rem;
+}
+@media only screen and (min-width: 1240px) {
+  .c-table__heading, .c-table__data {
+    min-width: initial;
+  }
 }
 .c-table__heading:first-child, .c-table__data:first-child {
-  padding-left: 20px;
+  padding-left: 1.25rem;
   padding-right: 0;
 }
 
@@ -583,7 +628,7 @@ textarea {
   background: rgba(0, 0, 0, 0.6);
   height: 100vh;
   width: 100vw;
-  z-index: 2;
+  z-index: 3;
   padding: 1.5rem;
   transition: all 0.3s ease;
   opacity: 0;
@@ -602,7 +647,7 @@ textarea {
   margin-bottom: 1rem;
 }
 .c-modal-container .c-modal__header i {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .c-modal-container .c-modal p {
   margin-bottom: 1.5rem;
@@ -650,8 +695,14 @@ textarea {
   right: 0;
   bottom: 0.5rem;
 }
+@media only screen and (min-width: 1240px) {
+  .section-products__title-icons {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
 .section-products__title-icons i {
-  font-size: 20px;
+  font-size: 1.25rem;
   margin-left: 1.25rem;
 }
 .section-products .section-products-container {
@@ -699,14 +750,14 @@ textarea {
   background-color: #F2F2F2;
 }
 .section-products .section-products__image-slider-button-icon {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .section-products .section-products__image-slider-button--right {
   left: initial;
   right: 0.75rem;
 }
 .section-products .section-products__product-form-wrapper {
-  padding: 0 24px;
+  padding: 0 1.5rem;
   width: 100%;
 }
 @media only screen and (min-width: 1240px) {
@@ -734,6 +785,11 @@ textarea {
 .section-products .section-products__product-form-text {
   margin-bottom: 1.1875rem;
 }
+@media only screen and (min-width: 1240px) {
+  .section-products .section-products__product-form-text {
+    margin-bottom: 1.5rem;
+  }
+}
 .section-products .section-products__product-form-select-group {
   display: flex;
   flex-direction: column;
@@ -759,11 +815,12 @@ textarea {
 .section-products .section-products__links {
   display: flex;
   padding-left: 1.5rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.1875rem;
 }
 @media only screen and (min-width: 1240px) {
   .section-products .section-products__links {
     padding-left: 0;
+    margin-bottom: 1.25rem;
   }
   .section-products .section-products__links-item {
     margin-right: 2rem;
@@ -787,11 +844,17 @@ textarea {
   width: 100%;
 }
 .section-description__content {
-  padding: 1.5rem 1.5rem 0;
+  padding: 1.3125rem 1.5rem 0;
 }
 .section-description__content h2,
 .section-description__content p {
   margin-bottom: 1.5rem;
+}
+.section-description__content p {
+  font-size: 1rem;
+}
+.section-description__content p:first-of-type {
+  margin-bottom: 0.75rem;
 }
 @media only screen and (min-width: 1240px) {
   .section-description {
@@ -812,11 +875,11 @@ textarea {
 }
 
 .section-specifications {
-  padding: 2rem 0 4.375rem;
+  padding: 2rem 0 3.9375rem;
   background: #F2F2F2;
 }
 .section-specifications__title {
-  margin-bottom: 2rem;
+  margin-bottom: 1.4375rem;
   padding-left: 1.5rem;
 }
 @media only screen and (min-width: 1240px) {
@@ -869,7 +932,13 @@ textarea {
 .header .header__content-wrapper .header__left-content .header__logo {
   width: 6.5625rem;
   height: 1.75rem;
-  margin-right: 3.625rem;
+  margin-right: 3rem;
+}
+@media only screen and (min-width: 1240px) {
+  .header .header__content-wrapper .header__left-content .header__logo {
+    width: 9.375rem;
+    height: 2.5rem;
+  }
 }
 .header .header__content-wrapper .header__left-content .header__desktop-menu-and-search {
   display: none;

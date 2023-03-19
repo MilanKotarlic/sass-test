@@ -1,5 +1,5 @@
 .c-breadcrumbs {
-	padding: 0 24px;
+	padding: 0 px-to-rem(24);
 
 	@include media-min($app-screen-desktop) {
     padding: 0;
@@ -14,19 +14,22 @@
 		}
 
 		&-item {
+			display: flex;
 			cursor: pointer;
+			height: px-to-rem(18);
 			&-link {
-				margin-right: px-to-rem(10);
+				display: inline-block;
+				margin-right: px-to-rem(8);
 				font-weight: 400;
-				font-size: 13px;
-				line-height: 18px;
+				font-size: $app-font-size-xs;
+				line-height: $app-line-height-sm;
 				text-decoration: none;
 			}
 			&-icon {
 				display: inline-block;
-				margin-right: px-to-rem(12);
+				margin-right: px-to-rem(14);
 				transform: rotate(90deg);
-				font-size: 12px;
+				font-size: px-to-rem(12);
 			}
 		}
 	}

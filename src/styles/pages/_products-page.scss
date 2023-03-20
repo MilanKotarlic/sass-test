@@ -32,7 +32,6 @@
 		}
 
 		i {
-			font-size: px-to-rem(20);
 			margin-left: px-to-rem(20);
 		}
 	}
@@ -82,10 +81,19 @@
 			&-icon {
 				font-size: px-to-rem(20);
 			}
-
+			
 			&--right {
 				left: initial;
 				right: px-to-rem(12);
+			}
+
+			@include media-min($app-screen-desktop) {
+				width: px-to-rem(56);
+				height: px-to-rem(56);
+
+				&-icon {
+					font-size: px-to-rem(24);
+				}
 			}
 		}
 	}

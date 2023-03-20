@@ -2,14 +2,16 @@
 	padding: 0 px-to-rem(24);
 
 	@include media-min($app-screen-desktop) {
-    padding: 0;
-  }
+		padding: 0;
+	}
+
 	&__list {
 		display: flex;
-
 		margin-bottom: px-to-rem(18);
+		margin-top: px-to-rem(31);
 
 		@include media-min($app-screen-desktop) {
+			margin-top: px-to-rem(40);
 			margin-bottom: px-to-rem(26);
 		}
 
@@ -17,6 +19,7 @@
 			display: flex;
 			cursor: pointer;
 			height: px-to-rem(18);
+
 			&-link {
 				display: inline-block;
 				margin-right: px-to-rem(8);
@@ -25,6 +28,7 @@
 				line-height: $app-line-height-sm;
 				text-decoration: none;
 			}
+
 			&-icon {
 				display: inline-block;
 				margin-right: px-to-rem(14);

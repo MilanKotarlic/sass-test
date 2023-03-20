@@ -3,3 +3,11 @@
 	z-index: 1;
 	width: 100%;
 }
+
+.l-main-content {
+	margin-top: $header-height;
+
+	@include media-min($app-screen-desktop) {
+		margin-top: $header-height-desktop;
+	}
+}

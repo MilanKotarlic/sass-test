@@ -25,6 +25,11 @@
 			align-items: center;
 			margin-bottom: px-to-rem(16);
 
+			h2 {
+				font-size: $app-font-size-lg;
+				line-height: $app-line-height-lg;
+			}
+
 			i {
 				font-size: px-to-rem(20);
 			}

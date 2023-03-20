@@ -13,6 +13,11 @@
 	min-width: px-to-rem(900);
 	border-collapse: collapse;
 
+	&__caption {
+		position: absolute;
+		left: -100%;
+	}
+
 	&__heading {
 		color: $app-color-primary;
 		font-weight: 600;

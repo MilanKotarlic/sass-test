@@ -1,7 +1,6 @@
 .c-icon {
   display: inline-block;
   font-size: px-to-rem(20);
-  color: $app-color-white;
 
   &--cart {
     position: relative;
@@ -19,6 +18,10 @@
       bottom: px-to-rem(-10);
       right: px-to-rem(-10);
     }
+  }
+
+  &--white {
+    color: $app-color-white;
   }
 }
 

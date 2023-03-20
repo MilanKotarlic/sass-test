@@ -1,13 +1,14 @@
 .header {
+	position: fixed;
+	width: 100%;
 	background: $app-color-primary;
 	padding: 0 px-to-rem(24);
 	max-width: 100vw;
 	height: $header-height;
-	margin-bottom: px-to-rem(31);
+	z-index: $app-z-index-header;
 
 	@include media-min($app-screen-desktop) {
 		height: $header-height-desktop;
-		margin-bottom: px-to-rem(40);
 	}
 
 	.header__content-wrapper {
@@ -35,7 +36,7 @@
 				img {
 					@include full-size
 				}
-				
+
 				@include media-min($app-screen-desktop) {
 					width: px-to-rem(150);
 					height: px-to-rem(40);

@@ -5,9 +5,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="This is a description of the product and its features.">
+	<meta name="keywords" content="product name, features, specifications, reviews, buy">
 	<link rel="stylesheet" href="./src/styles/main.css">
 	<script src="./index.js"></script>
-	<title>Document</title>
+	<title>NovaLite</title>
 </head>
 
 <body>
@@ -16,7 +18,7 @@
 			<div class="c-modal__header">
 				<h2>Contact us</h2>
 				<a id="closeButton" aria-label="Close modal">
-					<i class="fa-solid fa-x"></i>
+					<i class="fa-solid fa-x" class="c-icon"></i>
 				</a>
 			</div>
 			<p>We’ll get back to you as soon as possible.</p>
@@ -35,11 +37,11 @@
 			<div class="header__left-content">
 				<div class="header__mobile-menu">
 					<button class="c-button-clear">
-						<i class="fa-solid fa-bars c-icon"></i>
+						<i class="fa-solid fa-bars c-icon c-icon--white"></i>
 					</button>
 				</div>
 				<a class="header__logo" href="/" aria-label="Homepage">
-					<img class="header__logo-img" src="./src/assets/images/LOGO.svg" alt="page-logo" />
+					<img class="header__logo-img" src="./src/assets/images/LOGO.svg" alt="page-logo">
 				</a>
 				<div class="header__desktop-menu-and-search">
 					<nav class="c-navigation c-navigation--header header__navigation">
@@ -66,18 +68,18 @@
 			</div>
 			<div class="header__right-content">
 				<a class="header__right-content-icon-button" aria-label="My account">
-					<i class="fa-regular fa-user  c-icon "></i>
+					<i class="fa-regular fa-user c-icon c-icon--white"></i>
 				</a>
 				<a class="header__right-content-icon-button" aria-label="My wishlist">
-					<i class="fa-regular fa-heart  c-icon"></i>
+					<i class="fa-regular fa-heart c-icon c-icon--white"></i>
 				</a>
 				<a class="header__right-content-icon-button" aria-label="Shopping cart">
-					<i class="fa-solid fa-cart-shopping c-icon c-icon--cart"><span>1</span></i>
+					<i class="fa-solid fa-cart-shopping c-icon c-icon--cart c-icon--white"><span>1</span></i>
 				</a>
 			</div>
 		</div>
 	</header>
-	<main>
+	<main class="l-main-content">
 		<nav aria-label="Breadcrumb" class="l-page-container c-breadcrumbs">
 			<ul class="c-breadcrumbs__list" role="list">
 				<li class="c-breadcrumbs__list-item" role="listitem">
@@ -85,9 +87,9 @@
 					<i class="fa-solid fa-chevron-up c-breadcrumbs__list-item-icon" aria-hidden="true"></i>
 				</li>
 				<li class="c-breadcrumbs__list-item" role="listitem">
-					<a class="c-breadcrumbs__list-item-link"
-						href="#">Products</a> <i class="fa-solid fa-chevron-up c-breadcrumbs__list-item-icon"
-						aria-hidden="true"></i></li>
+					<a class="c-breadcrumbs__list-item-link" href="#">Products</a>
+					<i class="fa-solid fa-chevron-up c-breadcrumbs__list-item-icon" aria-hidden="true"></i>
+				</li>
 				<li class="c-breadcrumbs__list-item" role="listitem">
 					<a class="c-breadcrumbs__list-item-link" href="#">Bikes</a>
 					<i class="fa-solid fa-chevron-up c-breadcrumbs__list-item-icon" aria-hidden="true"></i>
@@ -101,20 +103,22 @@
 
 					</h1>
 					<div class="section-products__title-icons">
-						<i class="fa-solid fa-arrow-left"></i>
-						<i class="fa-solid fa-arrow-right"></i>
-						<i class="fa-regular fa-heart"></i>
-						<i class="fa-solid fa-share-nodes"></i>
+						<i class="fa-solid fa-arrow-left c-icon" aria-hidden="true"></i>
+						<i class="fa-solid fa-arrow-right c-icon" aria-hidden="true"></i>
+						<i class="fa-regular fa-heart c-icon" aria-hidden="true"></i>
+						<i class="fa-solid fa-share-nodes c-icon" aria-hidden="true"></i>
 					</div>
 				</div>
 				<div class="section-products-container">
 					<div class="section-products__image-slider">
 						<img class="section-products__image-slider-img" src="./src/assets/images/product.svg" alt="Product Name">
 						<button class="section-products__image-slider-button">
-							<i class="fa-solid fa-chevron-up section-products__image-slider-button-icon c-chevron-left"></i>
+							<i class="fa-solid fa-chevron-up section-products__image-slider-button-icon c-chevron-left"
+								aria-hidden="true"></i>
 						</button>
 						<button class="section-products__image-slider-button section-products__image-slider-button--right">
-							<i class="fa-solid fa-chevron-up section-products__image-slider-button-icon c-chevron-right"></i>
+							<i class="fa-solid fa-chevron-up section-products__image-slider-button-icon c-chevron-right"
+								aria-hidden="true"></i>
 						</button>
 					</div>
 					<div class="section-products__product-form-wrapper">
@@ -126,34 +130,38 @@
 								laborum.</p>
 							<div class="section-products__product-form-select-group">
 								<div class="c-select-wrapper">
-									<label class="c-select__label" for="c-select">Model</label>
-									<select class="c-select" id="c-select">
-										<option value="option1">Gents - Medium</option>
-										<option value="option2">Gents - Small</option>
-										<option value="option3">Gents - Large</option>
-										<option value="option1">Ladies - Medium</option>
-										<option value="option2">Ladies - Small</option>
-										<option value="option3">Ladies - Large</option>
+									<label class="c-select__label" for="model-select">Model</label>
+									<select class="c-select" id="model-select">
+										<option value="gents-medium">Gents - Medium</option>
+										<option value="gents-small">Gents - Small</option>
+										<option value="gents-large">Gents - Large</option>
+										<option value="ladies-medium">Ladies - Medium</option>
+										<option value="ladies-small">Ladies - Small</option>
+										<option value="ladies-large">Ladies - Large</option>
 									</select>
 								</div>
 								<div class="c-select-wrapper">
-									<label class="c-select__label" for="c-select">Color</label>
-									<select class="c-select" id="c-select">
-										<option value="option1">Black</option>
-										<option value="option2">White</option>
-										<option value="option3">Blue</option>
+									<label class="c-select__label" for="color-select">Color</label>
+									<select class="c-select" id="color-select">
+										<option value="black">Black</option>
+										<option value="white">White</option>
+										<option value="blue">Blue</option>
 									</select>
 								</div>
 							</div>
 							<div class="section-products__product-form-checkbox-group">
 								<label class="c-checkbox" for="my-checkbox-1">
 									<input checked type="checkbox" class="c-checkbox__input" id="my-checkbox-1" />
-									<span class="c-checkbox__icon"><i class="fas fa-check"></i></span>
+									<span class="c-checkbox__icon">
+										<i class="fas fa-check"></i>
+									</span>
 									Add option lorem ipsum
 								</label>
 								<label class="c-checkbox c-checkbox--desktop-spacing" for="my-checkbox">
 									<input type="checkbox" class="c-checkbox__input" id="my-checkbox" />
-									<span class="c-checkbox__icon"><i class="fas fa-check"></i></span>
+									<span class="c-checkbox__icon">
+										<i class="fas fa-check"></i>
+									</span>
 									Add option autpat velit cano totam rem aperiam
 								</label>
 							</div>
@@ -166,15 +174,15 @@
 				</div>
 				<ul class="section-products__links">
 					<li class="section-products__links-item">
-						<a class="section-products__links-item-button">Description</a>
+						<a class="section-products__links-item-button" href="/">Description</a>
 					</li>
 					<li>
 					<li class="section-products__links-item">
-						<a class="section-products__links-item-button">Specifications</a>
+						<a class="section-products__links-item-button" href="/">Specifications</a>
 					</li>
 					<li>
 					<li class="section-products__links-item">
-						<a class="section-products__links-item-button">Reviews(7)</a>
+						<a class="section-products__links-item-button" href="/">Reviews(7)</a>
 					</li>
 				</ul>
 			</div>
@@ -182,14 +190,16 @@
 
 		<section class="section-description l-page-container">
 			<div class="section-description__image">
-				<img src="./src/assets/images/bike-ride.svg" alt="bike-ride" />
+				<img src="./src/assets/images/bike-ride.svg" alt="Bikes">
 			</div>
 			<div class="section-description__content">
 				<h2>Product description</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
 					dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
 					ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-					nulla pariatur. </p>
+					nulla pariatur.
+				</p>
 				<p>
 					Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
 					laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
@@ -202,7 +212,8 @@
 			<div class="l-page-container">
 				<h2 class="section-specifications__title">Technical specifications</h2>
 				<div class="c-table-wrapper">
-					<table class="c-table">
+					<table class="c-table" aria-labelledby="specifications-heading">
+						<caption id="specifications-heading" class="c-table__caption">Technical specifications</caption>
 						<tr class="c-table__row c-table__row--first">
 							<th class="c-table__heading">Model</th>
 							<th class="c-table__heading">Frame size</th>
